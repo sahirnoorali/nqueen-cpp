@@ -30,7 +30,7 @@ int IsSafe(int x, int y, int a[][n]){
 		if(a[i][j]==1)
 			return 0;
 
-    for(i=x,j=y;(i<=n)&&(j>=0);i++,j--)
+    	for(i=x,j=y;(i<=n)&&(j>=0);i++,j--)
 		if(a[i][j]==1)
 			return 0;
 
@@ -59,7 +59,7 @@ int EQueen(int a[][n], int q){
 				//Go for the next queen
 				if(EQueen(a,q+1) == 1)
 			   		return 1;
-			   //Didn't work out, remove the queen (Backtracking)
+			   	//Didn't work out, remove the queen (Backtracking)
 			   	else
 			   		a[q][c] = 0;
 			}//close if
